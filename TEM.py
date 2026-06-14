@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import hermite
 
-#parameter at beam waist
+#Parameter at beam waist
 w_0 = 50.0  # beam waist radius
 A = 1.0
 
-#inputs
+#Inputs
 m, n = map(int, input("Enter mode indices (m n): ").split())
 
-#grid
+#Grid
 x = np.linspace(-4*w_0, 4*w_0, 500)
 y = np.linspace(-4*w_0, 4*w_0, 500)
 X,Y = np.meshgrid(x,y)
